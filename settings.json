@@ -1,0 +1,31 @@
+{
+  "1000_melena": {
+    "title": "kilogram",
+    "names": [
+      {
+        "old": "Кава Minelly CREMA",
+        "new": "CREMA 1kg"
+      }
+    ],
+    "ordering": 2
+  },
+  "250_zerno": {
+    "title": "zerno",
+    "names": [
+      {
+        "old": "Кава Minelly CREMA 250 зерно",
+        "new": "CREMA 250 зерно"
+      },
+      {
+        "old": "Акции Дон Пауло Амазон 100 г зерно",
+        "new": "CREMA 250 зерно"
+      },
+      {
+        "old": "Кава Minelly ORO 250 зерно",
+        "new": "ORO 250 зерно"
+      }
+    ],
+    "name": "",
+    "ordering": 1
+  }
+}
