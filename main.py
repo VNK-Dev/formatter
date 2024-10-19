@@ -1,3 +1,4 @@
+from os import write
 import pandas as pd
 import json
 from fastapi import FastAPI, File, UploadFile
@@ -15,5 +16,8 @@ async def format_file(file: UploadFile = File(...)):
 
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    # import uvicorn
+    # uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    # file = open('t.xlsx', 'r')
+    data = process('t.xlsx')
+

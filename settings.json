@@ -1,16 +1,16 @@
 {
   "1000_melena": {
-    "title": "kilogram",
+    "category": "kilogram",
     "names": [
       {
         "old": "Кава Minelly CREMA",
         "new": "CREMA 1kg"
       }
     ],
-    "ordering": 2
+    "ordering": 101
   },
   "250_zerno": {
-    "title": "zerno",
+    "category": "zerno",
     "names": [
       {
         "old": "Кава Minelly CREMA 250 зерно",
@@ -25,7 +25,6 @@
         "new": "ORO 250 зерно"
       }
     ],
-    "name": "",
-    "ordering": 1
+    "ordering": 100
   }
 }
