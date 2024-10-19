@@ -9,7 +9,6 @@ app = FastAPI()
 
 @app.post("/format-service/excel")
 async def format_file(file: UploadFile = File(...)):
-    print("new reques")
     content = await file.read()
     data = process(content)
     return Response(content=data,media_type="application/octet-stream")
