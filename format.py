@@ -59,10 +59,6 @@ class Table:
             quantityColumn.append(product.quantity)
         return nomenclatureColumn, quantityColumn
 
-    def format(self):
-        with pd.option_context('display.max_colwidth', None):
-            print(self.dataframe)
-
     def to_excel(self, fileName):
         with pd.ExcelWriter(fileName, engine='openpyxl') as writer:
             # Convert the DataFrame to an XlsxWriter Excel object
@@ -126,6 +122,5 @@ class Product():
 def process(content):
     table = Table(content)
     table.transform(Mapping('settings.json'))
-    table.format()
     table.to_excel("result.xlsx")
     return read_excel_to_bytes("result.xlsx")

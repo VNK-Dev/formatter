@@ -1,4 +1,3 @@
-from os import write
 import pandas as pd
 import json
 from fastapi import FastAPI, File, UploadFile
@@ -10,14 +9,13 @@ app = FastAPI()
 
 @app.post("/format-service/excel")
 async def format_file(file: UploadFile = File(...)):
+    print("new request")
     content = await file.read()
     data = process(content)
     return Response(content=data,media_type="application/octet-stream")
 
 
 if __name__ == "__main__":
-    # import uvicorn
-    # uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
-    # file = open('t.xlsx', 'r')
-    data = process('t.xlsx')
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
 
